@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GLOBAL AI LEARNING | Code with Bala Krishna</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f7fb;
+    color:#172033;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#111827,#2563eb);
+    color:white;
+    padding:30px 18px;
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+    font-size:32px;
+}
+
+header p{
+    margin:10px 0 0;
+}
+
+/* NAVIGATION */
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:white;
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
+    display:flex;
+    gap:8px;
+    padding:10px;
+    overflow-x:auto;
+}
+
+nav button{
+    border:none;
+    background:#e8eefc;
+    padding:11px 16px;
+    border-radius:9px;
+    cursor:pointer;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+nav button:hover,
+nav button.active{
+    background:#2563eb;
+    color:white;
+}
+
+/* MAIN */
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+.page{
+    display:none;
+}
+
+.page.active{
+    display:block;
+}
+
+.hero{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:16px;
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-top:0;
+}
+
+/* BUTTON */
+.btn{
+    border:none;
+    border-radius:9px;
+    background:#2563eb;
+    color:white;
+    padding:11px 16px;
+    cursor:pointer;
+    font-weight:bold;
+    margin:4px;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+.green{
+    background:#16a34a;
+}
+
+.red{
+    background:#dc2626;
+}
+
+.gray{
+    background:#64748b;
+}
+
+/* INPUT */
+input,
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccd5e3;
+    border-radius:9px;
+    margin:7px 0;
+    font-size:15px;
+}
+
+/* LESSON */
+.lesson{
+    border:1px solid #dbe3ef;
+    padding:18px;
+    border-radius:12px;
+    margin:12px 0;
+    background:#fafcff;
+}
+
+.lesson h3{
+    margin-top:0;
+}
+
+pre{
+    background:#111827;
+    color:#fff;
+    padding:15px;
+    border-radius:10px;
+    overflow:auto;
+}
+
+/* PROGRESS */
+.progress{
+    height:14px;
+    background:#dbe3ef;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.bar{
+    height:100%;
+    background:#2563eb;
+    width:0%;
+    transition:.4s;
+}
+
+/* QUIZ */
+.quiz-option{
+    display:block;
+    width:100%;
+    text-align:left;
+    background:#eef3fb;
+    border:none;
+    padding:14px;
+    margin:8px 0;
+    border-radius:9px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.quiz-option:hover{
+    background:#dce8ff;
+}
+
+/* BADGE */
+.badge{
+    display:inline-block;
+    background:#dbeafe;
+    color:#1d4ed8;
+    padding:6px 10px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* SEARCH */
+#searchResults{
+    margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    color:#64748b;
+}
+
+/* TOAST */
+#toast
